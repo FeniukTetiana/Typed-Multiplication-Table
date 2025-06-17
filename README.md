@@ -52,17 +52,17 @@ mvn clean package
 After a successful build, an executable *.jar file will be created in the target/ directory.
 
 2. Run the Application
-Use the java -jar command to run the program. Remember to specify the data type using the -Dtype flag.
+Use the java -Dtype=${type} -jar command to run the program. Remember to specify the data type using the -Dtype flag.
 
 Launch Examples:
 
 ```bash
-java -jar target/typed-multiplication-table-${project.version}.jar
+java -Dtype=double -jar target/typed-multiplication-table-${project.version}.jar
 Generate for the DOUBLE type:
 ```
 
 ```bash
-java -Dtype=double -jar target/typed-multiplication-table-${project.version}.jar
+java -Dtype=byte -jar target/typed-multiplication-table-${project.version}.jar
 Generate for the BYTE type (which can cause a quick overflow):
 ```
 
