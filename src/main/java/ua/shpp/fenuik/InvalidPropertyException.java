@@ -8,4 +8,5 @@ public class InvalidPropertyException extends Exception {
     public InvalidPropertyException(String message, Throwable cause) {
         super(message, cause);
     }
+    //////
 }
