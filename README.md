@@ -2,15 +2,15 @@
 This is a Java-based command-line utility designed to generate a multiplication table. The main feature of the project is its ability to work with various numeric data types, flexible configuration of the range and step, and a built-in system for checking type overflow.
 
 # Key Features
-Table Generation: Creates a multiplication table for a specified range of numbers (min, max).
-Custom Step: Allows specifying an increment for iterating through the range.
-Data Type Support: Works with various Java primitive data types:
-BYTE, SHORT, INT, LONG (integer types)
-FLOAT, DOUBLE (floating-point types)
-Overflow Control: The program checks if the result of a multiplication exceeds the permissible range for the selected data type.
-Flexible Error Handling: The application can be configured to either stop execution upon the first overflow (stopOnOverflow=true) or simply log an error and continue running.
-File-Based Configuration: All parameters are set via an application.properties file, allowing for easy changes without recompiling the code.
-High Precision: For FLOAT and DOUBLE types, calculations are performed using BigDecimal to ensure the accuracy of floating-point operations.
+- Table Generation: Creates a multiplication table for a specified range of numbers (min, max).
+- Custom Step: Allows specifying an increment for iterating through the range.
+- Data Type Support: Works with various Java primitive data types:
+  . BYTE, SHORT, INT, LONG (integer types)
+  . FLOAT, DOUBLE (floating-point types)
+- Overflow Control: The program checks if the result of a multiplication exceeds the permissible range for the selected data type.
+- Flexible Error Handling: The application can be configured to either stop execution upon the first overflow (stopOnOverflow=true) or simply log an error and continue running.
+- File-Based Configuration: All parameters are set via an application.properties file, allowing for easy changes without recompiling the code.
+- High Precision: For FLOAT and DOUBLE types, calculations are performed using BigDecimal to ensure the accuracy of floating-point operations.
 
 # Configuration
 To run the program, you need to create an application.properties file in the src/main/resources directory.
